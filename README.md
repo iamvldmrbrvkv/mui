@@ -1,3 +1,29 @@
+# Material UI v5 Crash Course
+
+This repository is a guide to **Material UI v6** based on the tutorial by **Laith Harb**.
+
+## Video Resource
+
+The **Material UI v5 Crash Course** by **Laith Harb** covers everything you need to know to start building with the latest version of Material UI. You can watch the full video here:
+
+[Material UI v5 Crash Course by Laith Harb](https://www.youtube.com/watch?v=o1chMISeTC0&t=333s)
+
+## Key Takeaways
+
+- Introduction to Material UI
+- Using Material UI components
+- Customizing components and themes
+- Understanding the Grid and Layout system
+- Using icons and other utilities
+
+## Installation
+
+To get started with Material UI v6 in your project, you can install it using one of the following commands:
+
+```bash
+npm install @mui/material @emotion/react @emotion/styled
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
