@@ -47,7 +47,7 @@ export const TourCard = () => {
   return (
     <Grid size={3}>
       <ThemeProvider theme={theme}> 
-        <Paper elevation={24}>
+        <Paper elevation={3}>
           <img
             src="https://media.timeout.com/images/105124791/750/422/image.jpg"
             alt=""
