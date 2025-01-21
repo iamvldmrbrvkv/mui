@@ -1,4 +1,4 @@
-import { Paper } from "@mui/material";
+import Paper from "@mui/material/Paper";
 import Grid from '@mui/material/Grid2';
 import Typography from '@mui/material/Typography';
 import Box from "@mui/material/Box";
@@ -41,21 +41,46 @@ declare module "@mui/material/Typography" {
   }
 }
 
+interface Tour {
 
-export const TourCard = () => {
+  id: number;
+
+  name: string;
+
+  duration: number;
+
+  rating: number;
+
+  numberOfReviews: number;
+
+  price: number;
+
+  image: string;
+
+}
+
+
+
+interface TourCardProps {
+
+  tour: Tour;
+
+}
+
+export const TourCard = ({ tour }: TourCardProps) => {
 
   return (
     <Grid size={3}>
-      <ThemeProvider theme={theme}> 
+      <ThemeProvider theme={theme}>
         <Paper elevation={3}>
           <img
-            src="https://media.timeout.com/images/105124791/750/422/image.jpg"
+            src={tour.image}
             alt=""
             className="img"
           />
           <Box sx={{ paddingX: 1 }}>
             <Typography variant='subtitle1' component='h2'>
-              Хороший тур
+              {tour.name}
             </Typography>
             <Box
               sx={{
@@ -65,7 +90,7 @@ export const TourCard = () => {
             >
               <AccessTimeIcon sx={{ width: 12.5 }} />
               <Typography variant='body2' component='p' marginLeft={0.5}>
-                5 hours
+                {tour.duration}
               </Typography>
             </Box>
             <Box
@@ -77,20 +102,20 @@ export const TourCard = () => {
             >
               <Rating name="read-only"
                 precision={0.5}
-                value={4.5}
+                value={tour.rating}
                 readOnly
                 size="small"
               />
               <Typography variant='body2' component='p' marginLeft={0.5}>
-                4.5
+                {tour.rating}
               </Typography>
               <Typography variant='body3' component='p' marginLeft={1.5}>
-                (655 reviews)
+                ({tour.numberOfReviews} reviews)
               </Typography>
             </Box>
             <Box>
               <Typography variant='h6' component='h3' marginTop={0}>
-                From C $ 147
+                From C ${tour.price}
               </Typography>
             </Box>
           </Box>
