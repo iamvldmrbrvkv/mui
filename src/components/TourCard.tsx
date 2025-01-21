@@ -70,7 +70,7 @@ interface TourCardProps {
 export const TourCard = ({ tour }: TourCardProps) => {
 
   return (
-    <Grid size={3}>
+    <Grid size={{ xs: 12, sm: 6, md: 3 }}>
       <ThemeProvider theme={theme}>
         <Paper elevation={3}>
           <img

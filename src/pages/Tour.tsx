@@ -9,12 +9,20 @@ import BasicModal from "../components/Modal";
 
 export const Tour = () => {
   return (
-    <Container sx={{ width: 900 }}>
-      <Box sx={{ marginTop: 3, display: 'flex' }}>
+    <Container sx={{ width: 1 }}>
+      <Box
+        sx={{
+          marginTop: 3,
+          display: 'flex',
+          flexDirection: { xs: 'column', md: 'row' },
+          gap: 1,
+          width: 1
+        }}
+      >
         <img
           src="https://media.timeout.com/images/105124791/750/422/image.jpg"
           alt=""
-          height={325}
+          className="tour-img"
         />
         <ImageCollage />
       </Box>
