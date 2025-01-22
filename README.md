@@ -6,7 +6,7 @@ This repository is a guide to **Material UI v6** based on the tutorial by **Lait
 
 The **Material UI v5 Crash Course** by **Laith Harb** covers everything you need to know to start building with the latest version of Material UI. You can watch the full video here:
 
-[Material UI v5 Crash Course by Laith Harb](https://www.youtube.com/watch?v=o1chMISeTC0&t=333s)
+[Material UI v5 Crash Course by Laith Harb](https://www.youtube.com/watch?v=o1chMISeTC0)
 
 ## Key Takeaways
 
